@@ -34,12 +34,12 @@ console.log(mySet.delete(4))
 
 console.log(mySet)
 
-// has
+// has -> comprueva si exite un valor y devuelve un booleano
 
 console.log(mySet.has("Moure"))
 console.log(mySet.has("Brais"))
 
-// size
+// size -> devuelve la longitud del Set
 
 console.log(mySet.size)
 

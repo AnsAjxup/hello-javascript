@@ -52,7 +52,8 @@ console.log(myArray)
 
 myArray = []
 
-// push y pop
+// push -> añade un elemento al final de la lista
+// pop -> elimina un elemento del final de la lista
 
 myArray.push("Brais")
 myArray.push("Moure")
@@ -66,7 +67,8 @@ myArray.pop()
 
 console.log(myArray)
 
-// shift y unshift
+// shift -> elimina el primer elemento del array y lo retorna
+// unshift -> agrega uno o más elementos al inicio del array, y devuelve la nueva longitud del array
 
 console.log(myArray.shift())
 console.log(myArray)
@@ -74,17 +76,19 @@ console.log(myArray)
 myArray.unshift("Brais", "mouredev")
 console.log(myArray)
 
-// length
+// length -> longitud del arrar
 
 console.log(myArray.length)
 
-// clear
+// formas de limpiar un array
 
 myArray = []
 myArray.length = 0 // alternativa
 console.log(myArray)
 
-// slice
+// slice -> devuelve una copia de una parte del array
+// dentro de un nuevo array empezando por inicio hasta fin.
+// El array original no se modificará.
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
@@ -93,7 +97,8 @@ let myNewArray = myArray.slice(1, 3)
 console.log(myArray)
 console.log(myNewArray)
 
-// splice
+// splice -> cambia el contenido de un array eliminando
+// elementos existentes y/o agregando nuevos elementos.
 
 myArray.splice(1, 3)
 console.log(myArray)
