@@ -18,6 +18,8 @@ let myName = person.name
 console.log(myName)
 
 // Desestructuración
+// es una sintaxis que nos permite extraer valores de arrays
+// u objetos y asignarlos a variables de manera consisa
 
 // Sintaxis arrays
 
@@ -51,6 +53,10 @@ console.log(age)
 console.log(alias)
 
 // Sintaxis objects con valores predeterminados
+//por norma general al desestructurar un objeto usamos
+//el nombre real de la propiedad del objeto como 
+//nombre de variable, porque mediante este busca la propiedad
+//y se asigna a la variable
 
 let { name2, age2, alias2, email = "email@email.com" } = person
 console.log(name2) // No existe
@@ -59,6 +65,8 @@ console.log(alias2)  // No existe
 console.log(email)
 
 // Sintaxis objects con nuevos nombres de variables
+//Para usar nombres de variables diferentes, se les debe
+//indicar la propiedad y el nuevo nombre de la variable
 
 let { alias: alias3, name: name3, age: age3 } = person
 console.log(name3)
@@ -82,13 +90,16 @@ let person3 = {
         }
     }
 }
-
+//desestructuracion de objeto anidado
 let { name: name4, job: { name: jobName } } = person3
 
 console.log(name4)
 console.log(jobName)
 
+
 // Propagación (...)
+//permite exapandir elementos de un array u objeto 
+//a otros arrays u objetos
 
 // Sintaxis arrays
 
