@@ -4,6 +4,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=16864
 */
 
 // Clases
+// el nombre de las clases comienza con mayuscula
 
 class Person {
 
@@ -70,6 +71,8 @@ let person4 = new PersonWithMethod("Brais", 37, "MoureDev")
 person4.walk()
 
 // Propiedades privadas
+// las propiedades privadas se definen al inicion de la
+// clase con el simbolo #
 
 class PrivatePerson {
 
@@ -96,7 +99,8 @@ let person5 = new PrivatePerson("Brais", 37, "MoureDev", "IBAN123456789")
 
 console.log(person5)
 
-// Getters y Setters
+
+// Getters (obtener) y Setters (establecer)
 
 class GetSetPerson {
 
@@ -135,6 +139,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=17999
 */
 
 // Herencia
+// para heredar las propiedades y metodos de una clase
 
 class Animal {
 
@@ -149,7 +154,9 @@ class Animal {
 }
 
 class Dog extends Animal {
-
+    
+    //tambien podemos redefinit métodos heredados
+    //en este caso redefinimos el método sound
     sound() {
         console.log("Guau!")
     }
@@ -159,6 +166,12 @@ class Dog extends Animal {
     }
 
 }
+
+// La palabra clave "super" es usada para acceder y 
+// llamar funciones del padre de un objeto.
+// En este ejemplo vemos que fish tiene su propio contructor
+// y su propia propiedad name, sin embargo usamos SUPER
+// para indicarle que usaremos la propiedad name de la clase padre
 
 class Fish extends Animal {
 
@@ -182,7 +195,12 @@ myFish.swim()
 myFish.sound()
 
 // Métodos estáticos
+// static -> para definir que un metodo es estatico
 
+/* Nos permite usar metodos sin necesidad de instanciar la clase,
+por ejemplo, podria ser nos util para definir un paquete de
+utilidades y que podamos utilizarlas sin la necesidad de
+instanciar la clase cada vez que las llamemos*/
 class MathOperations {
 
     static sum(a, b) {
