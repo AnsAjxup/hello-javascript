@@ -51,7 +51,7 @@ person3.alias = "MoureDev"
 
 console.log(person3.alias)
 
-// Funciones en clases
+// Métodos/Funciones en clases
 
 class PersonWithMethod {
 
