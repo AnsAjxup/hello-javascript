@@ -37,7 +37,10 @@ export class Circle {
 }
 
 // Exportación por defecto
-
+/* Se utiliza cuando estamos seguros que solo vamos
+    a exportar una unica cosa, en caso de usar mas de un
+    default nos marcara error */
+    
 export default function substract(a, b) {
     return a - b
 }
