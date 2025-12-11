@@ -77,18 +77,6 @@ for (let val of myArr){
     }
 }
 
-/* try{
-    for (let val of myArr){
-        if(typeof val === "boolean" || typeof val === "undefined" || typeof val === "string" || typeof val === "null"){
-            throw new Error("el tipo de variable no se puede pasar a float")
-        } else {
-            parseFloat(val)
-        }
-    }
-}catch(error){
-    console.log("hubo un error en la conversion: ", error.message)
-} */
-
 // 9. Crea una función que verifique si un objeto tiene una propiedad específica y lance una excepción personalizada
 let verificarPropiedad = (obj, propiedad) => {
     if(obj.hasOwnProperty(propiedad)){
