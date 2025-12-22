@@ -37,7 +37,7 @@ console.log(evens)
 // reduce
 /**
  * Este método reduce todos los elementos de un array a un 
- * solo valos, aplicando una función acumuladora
+ * solo valor, aplicando una función acumuladora
  * Ejemplo: suma todos los numeros de un array
  * result -> es el acumulador
  * current -> es el elemento acutal
