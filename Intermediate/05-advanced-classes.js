@@ -36,8 +36,8 @@ person.sayAge()
     - Definir un contrato
     - Compartir lógica común
     - Forzar implementación de métodos
-    -Reducir errores de diseño
-
+    - Reducir errores de diseño
+ 
     En JavaScript no existen las clases abstractas “reales” como en Java o C#,
     pero se pueden simular usando clases ES6, validaciones y métodos que deben 
     sobrescribirse.

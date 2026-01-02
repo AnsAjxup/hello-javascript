@@ -9,9 +9,9 @@ Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=7639
 
 // Prototipos
 /*En JavaScript, los prototipos son el mecanismo que usa el lenguaje para herencia 
- *y reutilización de métodos y propiedades entre objetos.
- * NOTA: los prototipos son la forma nativa del lenguaje para realizar herencias
- * pero en la actualidad estan deprecados y en su lugar se usan las clases
+ y reutilización de métodos y propiedades entre objetos.
+ NOTA: los prototipos son la forma nativa del lenguaje para realizar herencias
+ pero en la actualidad estan deprecados y en su lugar se usan las clases
  */
 let person = {
     name: "Brais",
