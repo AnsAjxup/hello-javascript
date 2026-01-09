@@ -30,6 +30,7 @@ console.log("Fin")
 // Código asíncrono
 
 // - Callbacks
+// SetTimeout() es la callback nativa de JS que simula asincronia
 
 console.log("Inicio")
 
@@ -40,6 +41,9 @@ setTimeout(() => {
 console.log("Fin")
 
 // - Problema: Callback Hell
+/*  es un problema común en JavaScript cuando se usan muchos 
+callbacks anidados, lo que hace el código difícil de leer, 
+mantener y depurar. */
 
 function step1(callback) {
     setTimeout(() => {
@@ -70,8 +74,18 @@ step1(() => {
     })
 })
 
-// - Promesas
 
+// - Promesas
+/*  Las Promesas (Promise) en JavaScript son una forma moderna de manejar operaciones
+asíncronas sin caer en el callback hell. Una Promise representa un valor que:
+
+🔄 aún no existe
+
+✅ se resolverá en el futuro
+
+❌ o fallará
+
+*/
 const promise = new Promise((resolve, reject) => {
     // IMPORTANTE: Inicialmente escribí setInterval, pero lo correcto es setTimeout
     // setInterval se ejecutaría indefinidamente cada 4s, y el proceso nunca finalizaría
@@ -129,8 +143,17 @@ step1Promise()
         console.log("Todos los pasos con promesa completados")
     })
 
-// - Async/Await
 
+// - Async/Await
+/*  es una forma más clara y legible de trabajar con promesas, evitando el callback hell
+y el encadenamiento excesivo de .then().
+
+La palabra clave async se usa para declarar una función asíncrona.
+✔️ Una función async siempre devuelve una promesa
+✔️ Permite usar await dentro de ella
+
+await pausa la ejecución de la función async hasta que la promesa se resuelva.
+ */
 function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
