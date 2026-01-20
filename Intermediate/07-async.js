@@ -94,7 +94,7 @@ const promise = new Promise((resolve, reject) => {
         if (ok) {
             resolve("Operación exitosa")
         } else {
-            reject("Se ha producido un error")
+            reject(new Error("Se ha producido un error"))
         }
     }, 4000)
 })
