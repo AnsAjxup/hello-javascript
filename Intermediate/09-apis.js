@@ -8,17 +8,17 @@ Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=14777
 // - APIs REST (HTTP + URLs + JSON)
 
 // Métodos HTTP:
-// - GET
-// - POST
-// - PUT
-// - DELETE
+// - GET -> solicitar datos
+// - POST -> enviar datos
+// - PUT -> actualizar datos
+// - DELETE -> eliminar datos
 
 // Códigos de respuesta HTTP:
-// - 200 OK
-// - 201
-// - 400
-// - 404
-// - 500
+// - 200 -> OK, solicitud exitosa
+// - 201 -> OK, se ha creado el recurso
+// - 400 -> Error por parte del cliente
+// - 404 -> Error, el recurso no se ha encontrado
+// - 500 -> Error del servidor
 
 // Consumir una API
 
