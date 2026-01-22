@@ -63,7 +63,8 @@ async function createPost() {
             title: "Este es el título de mi post",
             body: "Este es el cuerpo de mi post"
         }
-
+            //headers -> indica como se van a comunicar
+            //body -> lleva la data que se envíara
         const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "POST",
             headers: {
@@ -100,8 +101,8 @@ fetch("https://jsonplaceholder.typicode.com/mouredev")
     })
 
 // Métodos HTTP adicionales
-// - PATCH
-// - OPTIONS
+// - PATCH -> actualiza parcialmente un recurso
+// - OPTIONS -> permite consultar al servidor que metodos http estan permitidos
 
 async function partialPostUpdate() {
     try {
