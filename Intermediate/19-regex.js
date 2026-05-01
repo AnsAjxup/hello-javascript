@@ -3,12 +3,21 @@ Clases 75 a 78 - Regex
 Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=24363
 */
 
-// Expresiones regulares
+// REGEX (Expresiones regulares)
+// Es un estandar que nos permite generar un patrón de
+// busqueda que podemos aplicar a los textos
 
 // - Sintaxis
+/* Existen dos maneras de definir una regex, la 1r y más común;
+usando slash(barras) y la segunda usando RegExp("Expresion regular")
 
+*/ 
+//1ra forma
 const regex = /abc/
+//2da forma
 const regex2 = RegExp("abc")
+
+
 const text = "Hola abc JavaScript"
 
 // test: verifica coincidencia con true o false

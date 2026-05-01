@@ -4,7 +4,7 @@ Vídeo: https://youtu.be/iJvLAZ8MJ2E?t=18822
 */
 
 // Manejo del DOM (Document Object Model)
-
+//Métodos de selección - clase 63
 console.log(document)
 
 // - Selección de elementos
@@ -22,7 +22,7 @@ const myElementsByTag = document.getElementsByTagName("tag")
 document.querySelector(".paragraph")
 document.querySelectorAll(".paragraph")
 
-// - Manipulación de elementos
+// - Manipulación de elementos - clase 64
 
 const title = document.getElementById("title")
 title.textContent = "Hola JavaScript"
